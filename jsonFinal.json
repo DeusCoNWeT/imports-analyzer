@@ -1,0 +1,281 @@
+[
+    {
+        "directorio:": "/home/gcarrerat/proyectos/pythonparser/bower_components/iron-icons/iron-icons.html",
+        "numero:": 1
+    }
+][
+    {
+        "directorio:": "/home/gcarrerat/proyectos/pythonparser/bower_components/polymerfire/firebase-document.html",
+        "numero:": 2
+    }
+][
+    {
+        "directorio:": "/home/gcarrerat/proyectos/pythonparser/bower_components/polymerfire/firebase-database-behavior.html",
+        "numero:": 3
+    }
+][
+    {
+        "directorio:": "/home/gcarrerat/proyectos/pythonparser/bower_components/paper-material/paper-material-shared-styles.html",
+        "numero:": 4
+    }
+][
+    {
+        "directorio:": "/home/gcarrerat/proyectos/pythonparser/bower_components/iron-icon/iron-icon.html",
+        "numero:": 5
+    }
+][
+    {
+        "directorio:": "/home/gcarrerat/proyectos/pythonparser/bower_components/iron-behaviors/iron-control-state.html",
+        "numero:": 6
+    }
+][
+    {
+        "directorio:": "/home/gcarrerat/proyectos/pythonparser/bower_components/iron-validatable-behavior/iron-validatable-behavior.html",
+        "numero:": 7
+    }
+][
+    {
+        "directorio:": "/home/gcarrerat/proyectos/pythonparser/bower_components/app-storage/app-network-status-behavior.html",
+        "numero:": 8
+    }
+][
+    {
+        "directorio:": "/home/gcarrerat/proyectos/pythonparser/bower_components/polymer/polymer-mini.html",
+        "numero:": 9
+    }
+][
+    {
+        "directorio:": "/home/gcarrerat/proyectos/pythonparser/bower_components/paper-styles/shadow.html",
+        "numero:": 10
+    }
+][
+    {
+        "directorio:": "/home/gcarrerat/proyectos/pythonparser/bower_components/platinum-sw/platinum-sw-elements.html",
+        "numero:": 11
+    }
+][
+    {
+        "directorio:": "/home/gcarrerat/proyectos/pythonparser/bower_components/note-app-elements/na-behavior.html",
+        "numero:": 12
+    }
+][
+    {
+        "directorio:": "/home/gcarrerat/proyectos/pythonparser/bower_components/platinum-sw/platinum-sw-cache.html",
+        "numero:": 13
+    }
+][
+    {
+        "directorio:": "/home/gcarrerat/proyectos/pythonparser/bower_components/note-app-elements/na-elements.html",
+        "numero:": 14
+    }
+][
+    {
+        "directorio:": "/home/gcarrerat/proyectos/pythonparser/bower_components/promise-polyfill/promise-polyfill-lite.html",
+        "numero:": 15
+    }
+][
+    {
+        "directorio:": "/home/gcarrerat/proyectos/pythonparser/bower_components/iron-autogrow-textarea/iron-autogrow-textarea.html",
+        "numero:": 16
+    }
+][
+    {
+        "directorio:": "/home/gcarrerat/proyectos/pythonparser/bower_components/polymerfire/firebase-messaging.html",
+        "numero:": 17
+    }
+][
+    {
+        "directorio:": "/home/gcarrerat/proyectos/pythonparser/note-app.html",
+        "numero:": 18
+    }
+][
+    {
+        "directorio:": "/home/gcarrerat/proyectos/pythonparser/bower_components/paper-styles/color.html",
+        "numero:": 19
+    }
+][
+    {
+        "directorio:": "/home/gcarrerat/proyectos/pythonparser/bower_components/note-app-elements/shared-styles.html",
+        "numero:": 20
+    }
+][
+    {
+        "directorio:": "/home/gcarrerat/proyectos/pythonparser/bower_components/note-app-elements/na-editor.html",
+        "numero:": 21
+    }
+][
+    {
+        "directorio:": "/home/gcarrerat/proyectos/pythonparser/bower_components/polymer/polymer.html",
+        "numero:": 22
+    }
+][
+    {
+        "directorio:": "/home/gcarrerat/proyectos/pythonparser/bower_components/iron-flex-layout/iron-flex-layout.html",
+        "numero:": 23
+    }
+][
+    {
+        "directorio:": "/home/gcarrerat/proyectos/pythonparser/bower_components/platinum-sw/platinum-sw-register.html",
+        "numero:": 24
+    }
+][
+    {
+        "directorio:": "/home/gcarrerat/proyectos/pythonparser/bower_components/note-app-elements/na-login.html",
+        "numero:": 25
+    }
+][
+    {
+        "directorio:": "/home/gcarrerat/proyectos/pythonparser/bower_components/platinum-sw/platinum-sw-fetch.html",
+        "numero:": 26
+    }
+][
+    {
+        "directorio:": "/home/gcarrerat/proyectos/pythonparser/bower_components/iron-form-element-behavior/iron-form-element-behavior.html",
+        "numero:": 27
+    }
+][
+    {
+        "directorio:": "/home/gcarrerat/proyectos/pythonparser/bower_components/paper-button/paper-button.html",
+        "numero:": 28
+    }
+][
+    {
+        "directorio:": "/home/gcarrerat/proyectos/pythonparser/bower_components/promise-polyfill/promise-polyfill.html",
+        "numero:": 29
+    }
+][
+    {
+        "directorio:": "/home/gcarrerat/proyectos/pythonparser/bower_components/paper-behaviors/paper-ripple-behavior.html",
+        "numero:": 30
+    }
+][
+    {
+        "directorio:": "/home/gcarrerat/proyectos/pythonparser/bower_components/platinum-sw/platinum-sw-offline-analytics.html",
+        "numero:": 31
+    }
+][
+    {
+        "directorio:": "/home/gcarrerat/proyectos/pythonparser/bower_components/polymerfire/firebase-app.html",
+        "numero:": 32
+    }
+][
+    {
+        "directorio:": "/home/gcarrerat/proyectos/pythonparser/bower_components/app-storage/app-storage-behavior.html",
+        "numero:": 33
+    }
+][
+    {
+        "directorio:": "/home/gcarrerat/proyectos/pythonparser/bower_components/note-app-elements/na-toolbar.html",
+        "numero:": 34
+    }
+][
+    {
+        "directorio:": "/home/gcarrerat/proyectos/pythonparser/bower_components/iron-meta/iron-meta.html",
+        "numero:": 35
+    }
+][
+    {
+        "directorio:": "/home/gcarrerat/proyectos/pythonparser/bower_components/iron-behaviors/iron-button-state.html",
+        "numero:": 36
+    }
+][
+    {
+        "directorio:": "/home/gcarrerat/proyectos/pythonparser/bower_components/paper-ripple/paper-ripple.html",
+        "numero:": 37
+    }
+][
+    {
+        "directorio:": "/home/gcarrerat/proyectos/pythonparser/bower_components/iron-a11y-keys-behavior/iron-a11y-keys-behavior.html",
+        "numero:": 38
+    }
+][
+    {
+        "directorio:": "/home/gcarrerat/proyectos/pythonparser/bower_components/paper-styles/typography.html",
+        "numero:": 39
+    }
+][
+    {
+        "directorio:": "/home/gcarrerat/proyectos/pythonparser/bower_components/polymerfire/firebase-common-behavior.html",
+        "numero:": 40
+    }
+][
+    {
+        "directorio:": "/home/gcarrerat/proyectos/pythonparser/bower_components/paper-icon-button/paper-icon-button.html",
+        "numero:": 41
+    }
+][
+    {
+        "directorio:": "/home/gcarrerat/proyectos/pythonparser/index.html",
+        "numero:": 42
+    }
+][
+    {
+        "directorio:": "/home/gcarrerat/proyectos/pythonparser/bower_components/paper-fab/paper-fab.html",
+        "numero:": 43
+    }
+][
+    {
+        "directorio:": "/home/gcarrerat/proyectos/pythonparser/bower_components/polymerfire/firebase-auth.html",
+        "numero:": 44
+    }
+][
+    {
+        "directorio:": "/home/gcarrerat/proyectos/pythonparser/bower_components/polymerfire/firebase-query.html",
+        "numero:": 45
+    }
+][
+    {
+        "directorio:": "/home/gcarrerat/proyectos/pythonparser/bower_components/paper-styles/default-theme.html",
+        "numero:": 46
+    }
+][
+    {
+        "directorio:": "/home/gcarrerat/proyectos/pythonparser/bower_components/app-storage/app-indexeddb-mirror/app-indexeddb-mirror.html",
+        "numero:": 47
+    }
+][
+    {
+        "directorio:": "/home/gcarrerat/proyectos/pythonparser/bower_components/paper-behaviors/paper-button-behavior.html",
+        "numero:": 48
+    }
+][
+    {
+        "directorio:": "/home/gcarrerat/proyectos/pythonparser/bower_components/iron-a11y-announcer/iron-a11y-announcer.html",
+        "numero:": 49
+    }
+][
+    {
+        "directorio:": "/home/gcarrerat/proyectos/pythonparser/bower_components/note-app-elements/na-note.html",
+        "numero:": 50
+    }
+][
+    {
+        "directorio:": "/home/gcarrerat/proyectos/pythonparser/bower_components/app-storage/app-indexeddb-mirror/app-indexeddb-mirror-client.html",
+        "numero:": 51
+    }
+][
+    {
+        "directorio:": "/home/gcarrerat/proyectos/pythonparser/bower_components/iron-input/iron-input.html",
+        "numero:": 52
+    }
+][
+    {
+        "directorio:": "/home/gcarrerat/proyectos/pythonparser/bower_components/paper-behaviors/paper-inky-focus-behavior.html",
+        "numero:": 53
+    }
+][
+    {
+        "directorio:": "/home/gcarrerat/proyectos/pythonparser/bower_components/iron-iconset-svg/iron-iconset-svg.html",
+        "numero:": 54
+    }
+][
+    {
+        "directorio:": "/home/gcarrerat/proyectos/pythonparser/bower_components/platinum-sw/platinum-sw-import-script.html",
+        "numero:": 55
+    }
+][
+    {
+        "directorio:": "/home/gcarrerat/proyectos/pythonparser/bower_components/polymerfire/polymerfire.html",
+        "numero:": 56
+    }
+]

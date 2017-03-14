@@ -22,11 +22,13 @@ def removeDups(inputfile, outputfile):
     lines_set = set(lines)
     out=open(outputfile, 'w')
     with open("jsonFinal.json","w") as outfile:
+        json.dumps([{'directorio': k, 'numero': count} for k in lines_set], indent=4)
+        count = count+1
         for line in lines_set:
             out.write(str(count)+': '+line)
             #Eliminate the last \n while parsing the json
-            json.dump([{'directorio:':line[:-1], 'numero:':count}],outfile,indent=4)
-            count=count+1
+            #json.dump({'directorio:':line[:-1], 'numero:':count},outfile)
+            count = count+1
 
 def listAllFiles(dirrel):
     count=1

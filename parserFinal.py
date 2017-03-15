@@ -1,10 +1,12 @@
-import os
-import json
-import sys
-import fnmatch
+# Guillermo Carrera Trasobares 2017
+import os, sys, fnmatch, argparse
 from pathlib import Path
-
 from bs4 import BeautifulSoup
+
+parser= argparse.ArgumentParser()
+parser.add_argument('-u','--url',help="" )
+parser.parse_args()
+if
 
 
 
@@ -21,14 +23,9 @@ def removeDups(inputfile, outputfile):
     lines=open(inputfile, 'r').readlines()
     lines_set = set(lines)
     out=open(outputfile, 'w')
-    with open("jsonFinal.json","w") as outfile:
-        json.dumps([{'directorio': k, 'numero': count} for k in lines_set], indent=4)
-        count = count+1
-        for line in lines_set:
-            out.write(str(count)+': '+line)
-            #Eliminate the last \n while parsing the json
-            json.dump({'directorio:':line[:-1], 'numero:':count},outfile, indent=3)
-            count = count+1
+    for line in lines_set:
+        out.write(str(count)+': '+line)
+        count=count+1
 
 def listAllFiles(dirrel):
     count=1
@@ -40,9 +37,6 @@ def listAllFiles(dirrel):
 def listAllImports(dirrel):
     return
 
-def txtToJsonDump(inFile):
-    return
-
 
 def funcionRecursiva(dirrel):
     dirajust = dirrel
@@ -50,8 +44,7 @@ def funcionRecursiva(dirrel):
     soup2 = BeautifulSoup(fileopen, "html.parser")
     with open("importsTotales.txt", "a") as myfile:
         for link in soup2.find_all(rel="import"):
-            myfile.write(dirajust+'\n')
-            print('Import number:' + dirajust)
+            #print('Import number:' + dirajust)
             if link.get('href') == '':
                 break
             else:
@@ -60,15 +53,19 @@ def funcionRecursiva(dirrel):
                     #print("Empieza con ./:   "+auxi + '\n')
                     #print("El resultado de removerPuntoPunto es: " + removerPuntoPunto(auxi))
                     auxi = str(Path(dirajust).parent) + auxi[1:]
+                    myfile.write(auxi+'\n')
                     funcionRecursiva(auxi)
                 if auxi.startswith("../../"):
                     auxi2 = str(Path(dirajust).parent.parent.parent)
                     auxi = auxi2 + auxi[5:]
                     #print("Empieza con ../../:  "+auxi+'\n')
+                    myfile.write(auxi+'\n')
+                    funcionRecursiva(auxi)
                 if auxi.startswith("../"):
                     auxi2 = str(Path(dirajust).parent.parent)
                     auxi = auxi2 + auxi[2:]
                     #print("Empieza con ../:  "+auxi+'\n')
+                    myfile.write(auxi+'\n')
                     funcionRecursiva(auxi)
                 elif auxi.startswith("/"):
                     #print("Empieza con /:   "+auxi + '\n')
@@ -76,9 +73,10 @@ def funcionRecursiva(dirrel):
                 else:
                     #print("Import a tratar:  " + auxi + '\n')
                     auxi = str(Path(dirajust).parent) + '/' + auxi
+                    myfile.write(auxi+'\n')
                     funcionRecursiva(auxi)
 
-funcionRecursiva('/home/gcarrerat/proyectos/pythonparser/index.html')
+funcionRecursiva('/home/gcarrerat/proyectos/TestPolymer/index.html')
 #listAllFiles('/home/gcarrerat/proyectos/pythonparser/')
 removeDups('importsTotales.txt', 'importsCribados.txt')
 

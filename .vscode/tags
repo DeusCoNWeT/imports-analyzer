@@ -1,0 +1,27 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+args	../polymerParser.py	/^args = parser.parse_args()$/;"	kind:variable	line:19
+auxi	../polymerParser.py	/^                    auxi = auxi2 + auxi[5:]$/;"	kind:variable	line:99
+auxi	../polymerParser.py	/^                    auxi = str(Path(dirajust).parent) + '\/' + auxi$/;"	kind:variable	line:124
+auxi	../polymerParser.py	/^                    auxi = str(Path(dirajust).parent) + auxi[1:]$/;"	kind:variable	line:94
+auxi2	../polymerParser.py	/^                    auxi2 = str(Path(dirajust).parent.parent)$/;"	kind:variable	line:104
+auxi2	../polymerParser.py	/^                    auxi2 = str(Path(dirajust).parent.parent.parent)$/;"	kind:variable	line:98
+auxi3	../polymerParser.py	/^                    auxi3 = auxi2 + auxi[2:]$/;"	kind:variable	line:105
+auxi4	../polymerParser.py	/^                        auxi4 = str(Path(dirajust).parent)$/;"	kind:variable	line:112
+auxi6	../polymerParser.py	/^                        auxi6 = auxi4+testBower+auxi[2:]$/;"	kind:variable	line:114
+count	../polymerParser.py	/^            count=count+1$/;"	kind:variable	line:53
+createJson	../polymerParser.py	/^def createJson(inputfile,outputfile):$/;"	kind:function	line:43
+dirname	../polymerParser.py	/^                dirname = os.path.dirname(dirrel)$/;"	kind:variable	line:129
+extractImportJS	../polymerParser.py	/^def extractImportJS(inputfile):$/;"	kind:function	line:65
+files_list	../polymerParser.py	/^    files_list = []$/;"	kind:variable	line:58
+funcionRecursiva	../polymerParser.py	/^def funcionRecursiva(dirajust):$/;"	kind:function	line:81
+listAllFiles	../polymerParser.py	/^def listAllFiles(dirrel):$/;"	kind:function	line:28
+parser	../polymerParser.py	/^parser= argparse.ArgumentParser()$/;"	kind:variable	line:7
+path	../polymerParser.py	/^                path= os.path.abspath(dirname + '\/' +auxi)$/;"	kind:variable	line:130
+polymerParser.py	../polymerParser.py	1;"	kind:file	line:1
+removeDups	../polymerParser.py	/^def removeDups(inputfile, outputfile):$/;"	kind:function	line:35
+testBower	../polymerParser.py	/^                        testBower = "\/bower_components"$/;"	kind:variable	line:113

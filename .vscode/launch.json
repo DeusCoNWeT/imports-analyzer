@@ -19,9 +19,9 @@
       ],
       "args": [
         "-u",
-        "facebook-wall/facebook-wall.html",
+        "bower_components/facebook-wall/facebook-wall.html",
         "-o",
-        "test.json"
+        "json"
       ],
       "console": "integratedTerminal"
     },

@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 # Guillermo Carrera Trasobares 2017
 
 import os
@@ -17,16 +19,17 @@ MIXPANEL = Mixpanel(MIXPANEL_TOKEN)
 
 parser = argparse.ArgumentParser()
 parser.add_argument(
-    '-u', '--url', help="Introduce the URL you want to start parsing")
+    '-u', '--url', help="Introduce the path  you want to start parsing")
 parser.add_argument(
-    '-f', '--file', help="Introduce the URL you want to start parsing")
+    '-f', '--file', help="Introduce the file with all paths you want to start parsing", type=argparse.FileType('r'))
 parser.add_argument(
-    '-o', '--output', help="Introduce the desired output: txt, json.....")
+    '-o', '--output', help="Introduce the desired output: txt, json.....", default="json")
 parser.add_argument(
     '-s', '--sorted', help="Sorts the output", action='store_true')
 parser.add_argument('-l', '--listFiles',
                     help="Lists all files inside the selected directory and sub-directories",
                     action='store_true')
+parser.add_argument('-m','--nomixpanel',help="Avoid send data to mixpanel", action="store_true")                    
 
 args = parser.parse_args()
 
@@ -84,9 +87,8 @@ def generateReport(file_url):
         if args.output == "json":
             removeDups(DEFAULT_FILE, DEFAULT_SORT_FILE)
             total_lines, lines = createJson(DEFAULT_SORT_FILE)
-            #match_regex = re.search(r'\/[^-]*-[^-]*-([^\/]*)\/', file_url)
-            #version = match_regex.group(1)
-            version = "structural"
+            match_regex = re.search(r'\/[^-]*-[^-]*-([^\/]*)\/', file_url)
+            version = match_regex.group(1)
             print "%s - %d imports (totales %d)" % (file_url, len(total_lines), len(lines))
 
             return {"total_lines":len(lines),
@@ -99,10 +101,10 @@ def generateReport(file_url):
         if args.output:
             if args.output == "json":
                 total_lines, lines = createJson(DEFAULT_FILE)
-                #match_regex = re.search(r'\/[^-]*-[^-]*-([^\/]*)\/', file_url)
-                #version = match_regex.group(1)
-                version = "structural"
+                match_regex = re.search(r'\/[^-]*-[^-]*-([^\/]*)\/', file_url)
+                version = match_regex.group(1)
                 print "%s - %d imports (totales %d)" % (file_url, len(total_lines), len(lines))
+                
                 return {"total_lines":len(lines),
                         "file_name":os.path.basename(file_url), "single_imports":len(total_lines),
                         "version":version}
@@ -129,10 +131,12 @@ if args.url:
     #sendToMixpanel(report)
 
 elif args.file:
-    components = open(args.file).readlines()
+    components = args.file.readlines()
     report_list = [generateReport(file_url.replace('\n', '')) for file_url in components]
     output_file = open(DEFAULT_JSON_FILE, 'w')
     json.dump(report_list, output_file, indent=2)
 
     ## SEND TO MIXPANEL
-    [ sendToMixpanel(report) for report in report_list ]
+    if not args.nomixpanel:
+      print "Sending data to mixpanel"
+      [sendToMixpanel(report) for report in report_list]

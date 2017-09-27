@@ -1,5 +1,6 @@
 #!/bin/bash
-
+echo "$1"
 while IFS='' read -r line || [[ -n "$line" ]]; do
-    ./pbower install $line
+    #./pbower install $line
+    echo "$line"
 done < "$1"
